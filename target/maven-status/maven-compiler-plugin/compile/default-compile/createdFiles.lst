@@ -1,1 +1,11 @@
-
+io/javabrains/ipldashboard/repository/TeamRepository.class
+io/javabrains/ipldashboard/data/MatchInput.class
+io/javabrains/ipldashboard/repository/MatchRepository.class
+io/javabrains/ipldashboard/data/BatchConfig$1.class
+io/javabrains/ipldashboard/data/JobCompletionNotificationListener.class
+io/javabrains/ipldashboard/data/BatchConfig.class
+io/javabrains/ipldashboard/controller/TeamController.class
+io/javabrains/ipldashboard/model/Team.class
+io/javabrains/ipldashboard/IplDashboardApplication.class
+io/javabrains/ipldashboard/data/MatchDataProcessor.class
+io/javabrains/ipldashboard/model/Match.class
