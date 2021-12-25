@@ -1,20 +1,12 @@
-pipeline { 
-    agent any 
+pipeline {
+    agent {
+        docker { image 'openjdk:8-jdk-alpine' }
+    }
     stages {
-        stage('Compile Stage') { 
+        stage('Test') {
             steps {
-                    sh 'mvn clean complie'            
+                sh 'node --version'
             }
         }
-        stage('Testing Stage'){
-            steps {
-                    sh 'mvn test'
-                }
-            }
-        stage('Deployment Stage') {
-            steps {             
-                    sh 'mvn deploy'
-                }
-            }
-        }
+    }
 }
