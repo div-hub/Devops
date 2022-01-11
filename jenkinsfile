@@ -1,11 +1,21 @@
 pipeline {
-    agent {
-        docker { image 'openjdk:8-jdk-alpine' }
-    }
+    agent { dockerfile true }
     stages {
+    stages {
+        stage('Build') {
+            steps {
+                sh 'mvn --version'
+            }
+        }
         stage('Test') {
             steps {
-                sh 'java --version'
+                sh 'node --version'
+                sh 'svn --version'
+            }
+        }
+        stage('deploy') { 
+            steps {
+                echo 'deploying the application'
             }
         }
     }
