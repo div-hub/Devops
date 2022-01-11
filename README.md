@@ -1,7 +1,8 @@
 IPL Dashboard
 
-Browse your favorite IPL teams and access their past games details, wins and losses ratios - accessible by team and tournament year.
+The Dashboard provides the feature to browse any IPL team and get the access to their History of the games played.
 
+It also displays the number of games played, the history of wins and losses ratios and the tournament year.
 
 
 
