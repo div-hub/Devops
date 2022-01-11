@@ -1,22 +1,21 @@
 pipeline {
-    agent { dockerfile true }
+    agent any 
     stages {
-    stages {
-        stage('Build') {
+        stage('build') { 
             steps {
-                sh 'mvn --version'
+                echo 'building the application'
             }
         }
-        stage('Test') {
+        stage('Test') { 
             steps {
-                sh 'node --version'
-                sh 'svn --version'
+               echo 'testing the application'
             }
         }
+
         stage('deploy') { 
             steps {
                 echo 'deploying the application'
             }
         }
-    }
+}
 }
